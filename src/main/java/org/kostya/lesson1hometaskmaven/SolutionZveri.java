@@ -1,6 +1,5 @@
 package org.kostya.lesson1hometaskmaven;
 
-import com.google.common.base.CharMatcher;
 
 public class SolutionZveri {
 
@@ -60,8 +59,7 @@ public class SolutionZveri {
 					}
 	           // }
 	         System.out.println(SolNum); 
-	        /* String phoneNumber = CharMatcher.DIGIT.retainFrom("my phone number is 123456789");
-	         System.out.println(phoneNumber);*/
+	        
 	         
 	         }
 	         
