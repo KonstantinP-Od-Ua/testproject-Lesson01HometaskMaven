@@ -1,11 +1,14 @@
 package org.kostya.lesson1hometaskmaven;
 
+import com.google.common.base.Stopwatch;
 
 public class SolutionZveri {
 
 	public static void main(String[] args) {
-	     
-		 int SolNum=0;
+	
+		Stopwatch stopwatch = Stopwatch.createStarted();
+	
+	     int SolNum=0;
 		 int Counter=0;
 		 String pl="+";
 		 String eq="=";
@@ -43,8 +46,9 @@ public class SolutionZveri {
 													    /*System.out.println(Counter);*/ }
 							if(Counter>=45){
 								
-				System.out.printf("%d%d%d%d%s%d%d%d%d%s%d%d%d%d%d%n",i0,i1,i2,i3,pl,i4,i5,i0,i6,eq,i7,i4,i8,i9,i1);
-								SolNum++;}
+								SolNum++;
+								System.out.printf("%d%s%d%d%d%d%s%d%d%d%d%s%d%d%d%d%d%n",SolNum,".",i0,i1,i2,i3,pl,i4,i5,i0,i6,eq,i7,i4,i8,i9,i1);
+								}
 								Counter=0;
 								
 							
@@ -58,7 +62,11 @@ public class SolutionZveri {
 						}
 					}
 	           // }
-	         System.out.println(SolNum); 
+	            stopwatch.stop();
+	         
+	            System.out.printf("Number of solutions: %d%n",SolNum); 
+	            System.out.println("Time used: "+stopwatch);
+	         
 	        
 	         
 	         }
