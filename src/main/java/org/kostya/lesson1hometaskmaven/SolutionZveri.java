@@ -11,7 +11,7 @@ public class SolutionZveri {
 		 String eq="=";
 	     int[] a= new int[10]; 
 			 
-	         /*for(int i0=0;i0<10;i0++){*/
+	         //for(int i0=0;i0<10;i0++){
 				int i0=9;
 		       a[0]=i0;
 	            for(int i1=0;i1<10;i1++){
