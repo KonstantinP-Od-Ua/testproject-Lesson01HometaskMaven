@@ -8,15 +8,13 @@ public class SolutionZveri {
 	
 		Stopwatch stopwatch = Stopwatch.createStarted();
 	
-	     int SolNum=0;
-		 int Counter=0;
-		 String pl="+";
-		 String eq="=";
+	     int solNum=0;
+		 int counter=0;
+		 
 	     int[] a= new int[10]; 
 			 
-	         //for(int i0=0;i0<10;i0++){
-				int i0=9;
-		       a[0]=i0;
+	         for(int i0=0;i0<10;i0++){
+				a[0]=i0;
 	            for(int i1=0;i1<10;i1++){
 					a[1]=i1;
 					for(int i2=0;i2<10;i2++){
@@ -42,14 +40,14 @@ public class SolutionZveri {
 													    for (int j=i+1; j < 10; j++) 
 												                 if(a[i]==a[j]) break;
 												                 else
-												                	 Counter++;
-													    /*System.out.println(Counter);*/ }
-							if(Counter>=45){
+												                	 counter++;
+													   }
+							if(counter>=45){
 								
-								SolNum++;
-								System.out.printf("%d%s%d%d%d%d%s%d%d%d%d%s%d%d%d%d%d%n",SolNum,".",i0,i1,i2,i3,pl,i4,i5,i0,i6,eq,i7,i4,i8,i9,i1);
+								solNum++;
+								System.out.printf("%d.%d%d%d%d+%d%d%d%d=%d%d%d%d%d%n",solNum,i0,i1,i2,i3,i4,i5,i0,i6,i7,i4,i8,i9,i1);
 								}
-								Counter=0;
+								counter=0;
 								
 							
 												}
@@ -61,10 +59,10 @@ public class SolutionZveri {
 							}
 						}
 					}
-	           // }
+	            }
 	            stopwatch.stop();
 	         
-	            System.out.printf("Number of solutions: %d%n",SolNum); 
+	            System.out.printf("Number of solutions: %d%n",solNum); 
 	            System.out.println("Time used: "+stopwatch);
 	         
 	        
